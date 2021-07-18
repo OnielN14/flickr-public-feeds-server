@@ -1,10 +1,10 @@
 {
   "name": "flickr-public-feeds-server",
   "version": "1.0.0",
-  "main": "./dist/server.js",
+  "main": "./dist/src/server.js",
   "author": "Daniyal Ahmad Rizaldhi <daniyal.ahmadrizladhi@gmail.com>",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node ./dist/server.js",
+    "start": "cross-env NODE_ENV=production node ./dist/src/server.js",
     "serve": "node -r ts-node/register ./src/server.ts",
     "watch": "nodemon --watch src --watch .env --exec node -r ts-node/register ./src/server.ts",
     "build": "rimraf ./dist && tsc",
