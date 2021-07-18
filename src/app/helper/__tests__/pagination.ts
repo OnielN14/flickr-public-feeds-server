@@ -20,4 +20,12 @@ describe('Pagination Test', () => {
       expect(error.message).toEqual(`"page" must be greater than 0`)
     }
   })
+
+  it (`Should throw "perPage" must be greater than 0`, () => {
+    try {
+      pagination(sampleData, 1, -1)
+    } catch (error) {
+      expect(error.message).toEqual(`"perPage" must be greater than 0`)
+    }
+  })
 })
